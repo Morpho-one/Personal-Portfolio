@@ -1,0 +1,492 @@
+* {
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  font-family: sans-serif;
+}
+
+body {
+
+  background-color: rgb(30, 30, 30);
+  overflow: hidden;
+  overflow-y: scroll;
+  color: white;
+  
+}
+
+.navbar {
+
+  height: 5rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: rgb(30, 30, 30);
+}
+
+.logo {
+
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+}
+
+.desktopMenuListItem {
+
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopMenuImg {
+
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+.desktopMenuBtn {
+
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+}
+
+.desktopMenuListItem:hover {
+
+color: yellow;
+padding-bottom:0.5rem;
+border-bottom: 3px solid yellow;
+}
+
+#intro {
+
+  height: 100vh;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+
+  position: absolute;
+  z-index: -1;
+  top: -4rem;
+  right: 0;
+  object-fit: cover;
+  height: 50vh;
+  margin-top: 30vh;
+}
+
+.introContent {
+
+  height:100vh;
+  width:100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hello {
+
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.introName {
+
+  color: yellow;
+}
+
+.introPara {
+
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.btn {
+
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.Imgbtn {
+
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+
+@media screen and (max-width:480px) {
+
+  .bg {
+
+    right: -20vw;
+  }
+
+  .introContent {
+
+    font-size: 10vw;
+  }
+
+  .hello {
+
+    font-size: 4.5vw;
+  }
+}
+
+#skills {
+
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skillTitle {
+
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.skillDesc {
+
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+
+}
+
+.skillBars {
+
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+
+}
+
+.skillBar {
+
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(60, 50, 50);
+}
+
+.skillBarImg {
+
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.skillBarText>p {
+
+font-size: 0.9rem;
+font-weight: 200;
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .skillBarText>p {
+
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .skillBarText>p {
+
+    font-size: 3vw;
+  }
+
+  .skillBarImg {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  .skillBarText>h2 {
+
+    font-size: 5vw;
+  }
+}
+
+#works {
+
+  margin: 0 auto;
+  min-height: calc(100vh-4rem);
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.worksTitle {
+
+  margin: 1rem 0;
+  font-size: 3rem;
+
+}
+
+.worksDesc {
+
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 45rem;
+
+
+}
+
+.worksImgs {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 65rem;
+  flex-wrap: wrap;
+
+}
+
+.worksImg {
+
+  object-fit: cover;
+  height: 20rem;
+  margin: 0.5rem;
+
+}
+
+.workBtn {
+
+  margin: 3rem 0;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  background: white;
+  border-radius: 2rem;
+  font-size: 1rem;
+
+}
+
+@media screen and (max-width:585px) {
+
+  .worksImg {
+
+    height: 48vw;
+
+  }
+}
+
+#contactPage {
+
+  min-height: calc(100vh -4rem);
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactPageTitle {
+
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+}
+
+.clientDesc {
+
+  font-weight: 300;
+  font-size: 1rem;
+
+}
+
+.clientImgs {
+
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.clientImg {
+
+  object-fit: cover;
+  width: 23%;
+  min-width: 9rem;
+  margin: auto;
+  padding: 0.25rem;
+
+}
+
+#clients {
+
+  padding: 2rem;
+}
+
+.contactDesc {
+
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.contactForm {
+
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+
+.name, .email, .msg {
+
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+} 
+
+.submitBtn {
+
+  background: white;
+  border: none;
+  padding: 0.75rem 3.5rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  font-weight: bold;
+}
+
+.links {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.link {
+
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+}
+
+.footer {
+
+  width: 100vw;
+  height: 4rem;
+  background: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: small;
+}
+
+.active {
+
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+
+.navMenu{
+
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+.listItem {
+
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+}
+
+.mobMenu {
+
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+
+@media screen and (max-width: 720px) {
+
+  .mobMenu {
+
+    display: flex;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .desktopMenuBtn {
+
+    display: none;
+  }
+}
+  
+
+
